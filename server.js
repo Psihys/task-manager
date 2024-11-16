@@ -9,5 +9,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port} and working at https://localhost:${port}`);
+    console.log(
+        `Server is running on port ${port} and working at https://localhost:${port}`
+    );
 });
