@@ -1,3 +1,13 @@
-const sum = (a, b) => a + b;
+const express = require('express');
+const bodyParser = require('body-parser');
 
-console.log(sum(10, 10));
+const app = express();
+const port = 3000;
+
+// middleware to parse JSON request bodies
+
+app.use(bodyParser.json());
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port} and working at https://localhost:${port}`);
+});
