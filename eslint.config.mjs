@@ -14,6 +14,7 @@ export default [
         rules: {
             curly: 0,
             'no-unexpected-multiline': 0,
+            'no-unused-vars': 0,
         },
     },
     prettier,
